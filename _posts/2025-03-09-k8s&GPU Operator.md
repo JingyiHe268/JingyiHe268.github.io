@@ -117,8 +117,8 @@ containerd config default > /etc/containerd/config.toml
 
 ```yaml
 # ...
-		[plugins."io.containerd.grpc.v1.cri".containerd.runtimes.runc.options]
-			SystemdCgroup = true # 原本是 false，不改的话容器时不时会崩溃
+[plugins."io.containerd.grpc.v1.cri".containerd.runtimes.runc.options]
+	SystemdCgroup = true # 原本是 false，不改的话容器时不时会崩溃
 # ...
 ```
 
